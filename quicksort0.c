@@ -32,7 +32,7 @@ int main()
 	for(i=lb;i<=ub;i++)
 	printf("%d ",arr[i]);
 }
-int quicksort(int *arr,int lb,int ub)
+void quicksort(int *arr,int lb,int ub)
 {  int loc,mid;
 	if(lb<ub)
 	{
