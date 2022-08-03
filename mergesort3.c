@@ -1,5 +1,5 @@
 #include<stdio.h>
-int merge(int *arr,int lb,int mid,int ub)
+void merge(int *arr,int lb,int mid,int ub)
 {
 	int i=lb,j=mid+1,k=lb,brr[1000];
 	while(i<=mid && j<=ub)
@@ -51,7 +51,7 @@ int main()
 	for(i=lb;i<=ub;i++)
 	printf("%d ",arr[i]);
 }
-int mergesort(int *arr,int lb,int ub)
+void mergesort(int *arr,int lb,int ub)
 {   int mid;
 	if(lb<ub)
 	{
